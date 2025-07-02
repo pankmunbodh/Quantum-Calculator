@@ -3,7 +3,7 @@ In this notebook, we implement the most basic functions of a Quantum Calculator 
 Concretely, we write a Qiskit function that takes a positive integer $d$ as input and outputs a quantum circuit, QCalc, on $3d+1$ qubits that implements:
 
 $$
-|x\rangle_d|y\rangle_d|z\rangle_d |0\rangle_d = \begin{cases} |x\rangle_d |y\rangle_d |z\rangle_1 |x+y \text{ mod } 2^d \rangle_d \text{ if } z = 0 \\ |x\rangle_d |y\rangle_d |z\rangle_1 |x \cdot y \text{ mod } 2^d \rangle_d \text{ if } z = 1 \end{cases}
+|x\rangle_d|y\rangle_d|z\rangle_d |0\rangle_d = \begin{cases} |x\rangle_d |y\rangle_d |z\rangle_1 |x+y \text{ mod } 2^d \rangle_d \text{ if } z = 0, |x\rangle_d |y\rangle_d |z\rangle_1 |x \cdot y \text{ mod } 2^d \rangle_d \text{ if } z = 1 \end{cases}
 $$
 
 
