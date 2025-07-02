@@ -2,9 +2,9 @@ In this notebook, we implement the most basic functions of a Quantum Calculator 
 
 Concretely, we write a Qiskit function that takes a positive integer $d$ as input and outputs a quantum circuit, QCalc, on $3d+1$ qubits that implements:
 
-\begin{equation}
+$$
 |x\rangle_d|y\rangle_d|z\rangle_d |0\rangle_d = \begin{cases} |x\rangle_d |y\rangle_d |z\rangle_1 |x+y \text{ mod } 2^d \rangle_d \text{ if } z = 0 \\ |x\rangle_d |y\rangle_d |z\rangle_1 |x \cdot y \text{ mod } 2^d \rangle_d \text{ if } z = 1 \end{cases}
-\end{equation}
+$$
 
 
 The construction only uses arbitrary 1-qubit gates, CX and Toffoli gates. No classical bit and measurements are used.
